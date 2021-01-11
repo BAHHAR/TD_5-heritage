@@ -8,7 +8,7 @@ Commercial::Commercial(const Employe&emp,int nbr):Employe(emp),nbr_ventes(nbr)
 {
 }
 
-void Commercial::afficher() const
+void Commercial::afficher() 
 {
 	Employe::afficher();
 	cout << "Nombre des ventes: " << nbr_ventes << endl;
@@ -16,5 +16,5 @@ void Commercial::afficher() const
 
 void Commercial::maj()
 {
-	this->salaire = this->salaire + this->salaire * (this->indice + nbr_ventes);
+	this->salaire = this->salaire + this->salaire * nbr_ventes;
 }

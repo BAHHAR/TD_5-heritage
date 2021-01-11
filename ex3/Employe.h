@@ -6,14 +6,15 @@ class Employe
 {
 	static int cpt;
 public:
-	Employe() :nom(""), salaire(0.0), mat(cpt++) {};
+	Employe() :nom(""), indice_salarial(0.0), mat(cpt++) {};
 	Employe(string, float);
-	void afficher()const;
+	void afficher();
 	void calculerSalaire();
 protected:
-	static int indice;
+	static int aug;
 	string nom;
 	int mat;
+	float indice_salarial;
 	float salaire;
 };
 
