@@ -16,5 +16,5 @@ void Commercial::afficher()
 
 void Commercial::maj()
 {
-	this->salaire = this->salaire + this->salaire * nbr_ventes;
+	this->salaire = this->salaire  * nbr_ventes;
 }
