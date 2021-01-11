@@ -75,18 +75,14 @@ DateH& DateH::operator+(int j) const
 			d->mois = this->mois + 1;
 			d->annee = this->annee;
 		}
-		d->heure = this->heure;
-		d->minute = this->minute;
-		d->seconde = this->seconde;
+		
 	}
 	else {
 		d->jour = this->jour + j;
 		d->mois = this->mois;
 		d->annee = this->annee;
-		d->heure = this->heure;
-		d->minute = this->minute;
-		d->seconde = this->seconde;
 	}
+	d->Heure::Heure(this->heure, this->minute, this->seconde);
 	return *d;
 }
 
