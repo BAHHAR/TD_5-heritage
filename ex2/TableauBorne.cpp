@@ -6,7 +6,7 @@ TableauBorne::TableauBorne(int nbr, float min, float max):Tableau(nbr),max(max),
 
 
 
-TableauBorne& TableauBorne::operator()(int i, float nbr)
+float TableauBorne::operator()(int i, float nbr)
 {
 	if (i >= this->min && i <= this->max && i <= this->taille) {
 		this->tab[i] = nbr;
