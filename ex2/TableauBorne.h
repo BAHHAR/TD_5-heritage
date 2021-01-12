@@ -4,7 +4,7 @@ class TableauBorne :public Tableau
 {
 public:
 	TableauBorne(int, float, float);
-	float& operator[](int)const=delete;
+	float operator[](int)const;
 	TableauBorne& operator()(int, float);
 private:
 	float min, max;
